@@ -4,6 +4,7 @@
       <div class="avatar_box">
         <img src="../assets/logo.png" alt="">
       </div>
+<!--      登录表单-->
       <el-form ref="loginRef" :model="loginForm" :rules="login_rules" label-width="0px" class="login_form">
 <!--        用户名-->
         <el-form-item prop="username">
@@ -32,6 +33,7 @@ export default {
         username: 'admin',
         password: '123456'
       },
+      // 表单验证规则
       login_rules: {
         username: [
           {required: true, message: '请输入用户名', trigger: 'blur'},
@@ -50,6 +52,7 @@ export default {
       console.log(this)
       this.$refs.loginRef.resetFields()
     },
+    // 用户登录
     login: function () {
       this.$refs.loginRef.validate(valid => {
         if (!valid) return
