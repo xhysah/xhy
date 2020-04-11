@@ -4,8 +4,8 @@ import login from '../pages/login.vue'
 import home from '../pages/home.vue'
 import welcome from '../components/welcome.vue'
 import users from '../components/users.vue'
-import roles from '../components/roles.vue'
-import rights from '../components/rights.vue'
+import roles from '../components/power/roles.vue'
+import rights from '../components/power/rights.vue'
 
 Vue.use(Router)
 
