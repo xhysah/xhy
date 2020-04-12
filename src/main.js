@@ -7,6 +7,7 @@ import axios from 'axios'
 import './elementUi/element'
 import '../src/assets/global.css'
 import './assets/font/iconfont.css'
+import TreeTable from 'vue-table-with-tree-grid'
 
 // Axios 是一个基于 promise 的 HTTP 库
 // baseURL设置请求不同域名的接口，baseURL的值将自动加在 `url` 前面，除非 `url` 是一个绝对 URL
@@ -19,7 +20,7 @@ axios.interceptors.request.use(config => {
 })
 Vue.prototype.$http = axios
 Vue.config.productionTip = false
-
+Vue.component('tree-table', TreeTable)
 /* eslint-disable no-new */
 new Vue({
   router,
