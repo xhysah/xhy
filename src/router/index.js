@@ -9,6 +9,8 @@ import rights from '../components/power/rights.vue'
 import categories from '../components/goodsManagement/categories.vue'
 import goods from '../components/goodsManagement/goods.vue'
 import params from '../components/goodsManagement/params.vue'
+import orders from '../components/order/order.vue'
+import reports from '../components/data/reports.vue'
 
 Vue.use(Router)
 
@@ -55,6 +57,14 @@ const router = new Router({
         {
           path: '/params',
           component: params
+        },
+        {
+          path: '/reports',
+          component: reports
+        },
+        {
+          path: '/orders',
+          component: orders
         }
       ]
     }
