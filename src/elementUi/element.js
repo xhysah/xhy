@@ -28,7 +28,12 @@ import {
   Tag,
   Tree,
   Select,
-  Option
+  Option,
+  Cascader,
+  CascaderPanel,
+  Alert,
+  Tabs,
+  TabPane
 } from 'element-ui'
 
 // 若想使用element-ui组件，需要引用对应的组件，并且需要挂载
@@ -59,5 +64,10 @@ Vue.use(Tag)
 Vue.use(Tree)
 Vue.use(Select)
 Vue.use(Option)
+Vue.use(Cascader)
+Vue.use(CascaderPanel)
+Vue.use(Alert)
+Vue.use(Tabs)
+Vue.use(TabPane)
 Vue.prototype.$message = Message
 Vue.prototype.$confirm = MessageBox.confirm
