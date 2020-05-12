@@ -33,6 +33,7 @@ module.exports = {
   },
   resolve: {
     extensions: ['.js', '.vue', '.json'],
+    // 配置了这条，就可以省略引用后面的后缀了
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src'),
